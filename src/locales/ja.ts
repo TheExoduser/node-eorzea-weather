@@ -16,6 +16,8 @@ export default {
   'weathers.umbralStatic': '放電',
   'weathers.umbralWind': '霊風',
   'weathers.wind': '風',
+  'weathers.moonDust': '月砂塵',
+  'weathers.astromagneticStorm': '磁気嵐',
   'zones.amhAraeng': 'アム・アレーン',
   'zones.azysLla': 'アジス・ラー',
   'zones.bozjanSouthernFront': '南方ボズヤ戦線',
@@ -72,4 +74,15 @@ export default {
   'zones.wolvesDenPier': 'ウルヴズジェイル係船場',
   'zones.yanxia': 'ヤンサ',
   'zones.zadnor': 'ザトゥノル高原',
+
+  // new endwalker areas
+  'zones.radzAtHan': 'ラザハン',
+  'zones.thavnair': 'サベネア島',
+  'zones.garlemald': 'ガレマルド',
+  'zones.oldSharlayan': 'オールド・シャーレアン',
+  'zones.labyrinthos': 'ラヴィリンソス',
+  'zones.mareLamentorum': '嘆きの海',
+  'zones.ultimaThule': 'ウルティマ・トゥーレ',
+  'zones.elpis': 'エルピス',
+  'zones.unnamedIsland': "名もなき島"
 };

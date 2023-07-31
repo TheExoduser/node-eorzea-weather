@@ -15,3 +15,7 @@ export const WEATHER_THUNDERSTORMS = 'thunderstorms';
 export const WEATHER_UMBRAL_STATIC = 'umbralStatic';
 export const WEATHER_UMBRAL_WIND = 'umbralWind';
 export const WEATHER_WIND = 'wind';
+
+// new endwalker weather types
+export const WEATHER_MOON_DUST = 'moonDust';
+export const WEATHER_ASTROMAGNETIC_STORM = 'astromagneticStorm';

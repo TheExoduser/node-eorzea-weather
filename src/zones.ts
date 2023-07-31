@@ -54,3 +54,14 @@ export const ZONE_WESTERN_THANALAN = 'westernThanalan';
 export const ZONE_WOLVES_DEN_PIER = 'wolvesDenPier';
 export const ZONE_YANXIA = 'yanxia';
 export const ZONE_ZADNOR = 'zadnor';
+
+// new endwalker areas
+export const ZONE_RADZ_AT_HAN = 'radzAtHan';
+export const ZONE_THAVNAIR = 'thavnair';
+export const ZONE_GARLEMALD = 'garlemald';
+export const ZONE_OLD_SHARLAYAN = 'oldSharlayan';
+export const ZONE_LABYRINTHOS = 'labyrinthos';
+export const ZONE_MARE_LAMENTORUM = 'mareLamentorum';
+export const ZONE_ULTIMA_THULE = 'ultimaThule';
+export const ZONE_ELPIS = 'elpis';
+export const ZONE_UNNAMED_ISLAND = 'unnamedIsland';

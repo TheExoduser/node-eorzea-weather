@@ -234,6 +234,44 @@ export default class EorzeaWeather {
     return zones.ZONE_ZADNOR;
   }
 
+  // new endwalker areas
+  static get ZONE_RADZ_AT_HAN(): string {
+    return zones.ZONE_RADZ_AT_HAN;
+  }
+
+  static get ZONE_THAVNAIR(): string {
+    return zones.ZONE_THAVNAIR;
+  }
+  
+  static get ZONE_GARLEMALD(): string {
+    return zones.ZONE_GARLEMALD;
+  }
+
+  static get ZONE_OLD_SHARLAYAN(): string {
+    return zones.ZONE_OLD_SHARLAYAN;
+  }
+
+  static get ZONE_LABYRINTHOS(): string {
+    return zones.ZONE_LABYRINTHOS;
+  }
+
+  static get ZONE_MARE_LAMENTORUM(): string {
+    return zones.ZONE_MARE_LAMENTORUM;
+  }
+
+  static get ZONE_ULTIMA_THULE(): string {
+    return zones.ZONE_ULTIMA_THULE;
+  }
+
+  static get ZONE_ELPIS(): string {
+    return zones.ZONE_ELPIS;
+  }
+
+  static get ZONE_UNNAMED_ISLAND(): string {
+    return zones.ZONE_UNNAMED_ISLAND;
+  }
+
+
   static getWeather(
     id: string,
     date: Date,
@@ -258,7 +296,8 @@ export default class EorzeaWeather {
       throw new TypeError(`'${this.#id}' is undefined zone ID.`);
     }
     const chance = calculateForecastTarget(date);
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call 
+    // @ts-expect-error
     const id: string = weatherChances[this.#id](chance);
     return this.translate(`weathers.${id}`);
   }
@@ -272,6 +311,7 @@ export default class EorzeaWeather {
 
   translate(key: string): string {
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
+    // @ts-expect-error
     const value: string | undefined = locales[this.#locale][key];
     if (!value) {
       throw new TypeError(`'${key}' is undefined translate ID.`);
@@ -283,6 +323,7 @@ export default class EorzeaWeather {
     const key = `ZONE_${this.#id
       .replace(/[A-Z]/g, (w) => `_${w}`)
       .toUpperCase()}`;
+      // @ts-expect-error
     return zones[key] === this.#id;
   }
 }

@@ -16,6 +16,8 @@ export default {
   'weathers.umbralStatic': 'Umbral Static',
   'weathers.umbralWind': 'Umbral Wind',
   'weathers.wind': 'Wind',
+  'weathers.moonDust': 'Moon Dust',
+  'weathers.astromagneticStorm': 'Astromagnetic Storm',
   'zones.amhAraeng': 'Amh Araeng',
   'zones.azysLla': 'Azys Lla',
   'zones.bozjanSouthernFront': 'Bozjan Southern Front',
@@ -72,4 +74,15 @@ export default {
   'zones.wolvesDenPier': "Wolves' Den Pier",
   'zones.yanxia': 'Yanxia',
   'zones.zadnor': 'Zadnor',
+
+  // new endwalker areas
+  'zones.radzAtHan': 'Radz-at-Han',
+  'zones.thavnair': 'Thavnair',
+  'zones.garlemald': 'Garlemald',
+  'zones.oldSharlayan': 'Old Sharlayan',
+  'zones.labyrinthos': 'Labyrinthos',
+  'zones.mareLamentorum': 'Mare Lamentorum',
+  'zones.ultimaThule': 'Ultima Thule',
+  'zones.elpis': 'Elpis',
+  'zones.unnamedIsland': "Unnamed Island"
 };
