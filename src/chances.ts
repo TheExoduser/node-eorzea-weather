@@ -1,4 +1,5 @@
 import {
+  WEATHER_ASTROMAGNETIC_STORM,
   WEATHER_BLIZZARDS,
   WEATHER_CLEAR_SKIES,
   WEATHER_CLOUDS,
@@ -8,6 +9,7 @@ import {
   WEATHER_GALES,
   WEATHER_GLOOM,
   WEATHER_HEAT_WAVES,
+  WEATHER_MOON_DUST,
   WEATHER_RAIN,
   WEATHER_SHOWERS,
   WEATHER_SNOW,
@@ -1006,3 +1008,142 @@ export const zadnor = (chance: number): string => {
   }
   return WEATHER_SNOW;
 };
+
+// new endwalker areas
+export const oldSharlayan = (chance: number): string => {
+  if (chance < 10) {
+    return WEATHER_CLEAR_SKIES;
+  }
+  if (chance < 50) {
+    return WEATHER_FAIR_SKIES;
+  }
+  if (chance < 70) {
+    return WEATHER_CLOUDS;
+  }
+  if (chance < 85) {
+    return WEATHER_FOG;
+  }
+  return WEATHER_SNOW;
+}
+
+export const radzAtHan = (chance: number): string => {
+  if (chance < 10) {
+    return WEATHER_FOG;
+  }
+  if (chance < 25) {
+    return WEATHER_RAIN;
+  }
+  if (chance < 40) {
+    return WEATHER_CLEAR_SKIES;
+  }
+  if (chance < 80) {
+    return WEATHER_FAIR_SKIES;
+  }
+  return WEATHER_CLOUDS;
+}
+
+export const labyrinthos = (chance: number): string => {
+  if (chance < 15) {
+    return WEATHER_CLEAR_SKIES;
+  }
+  if (chance < 60) {
+    return WEATHER_FAIR_SKIES;
+  }
+  if (chance < 85) {
+    return WEATHER_CLOUDS;
+  }
+  return WEATHER_RAIN;
+}
+
+export const thavnair = (chance: number): string => {
+  if (chance < 10) {
+    return WEATHER_FOG;
+  }
+  if (chance < 20) {
+    return WEATHER_RAIN;
+  }
+  if (chance < 25) {
+    return WEATHER_SHOWERS;
+  }
+  if (chance < 40) {
+    return WEATHER_CLEAR_SKIES;
+  }
+  if (chance < 80) {
+    return WEATHER_FAIR_SKIES;
+  }
+  return WEATHER_CLOUDS;
+}
+
+export const garlemald = (chance: number) => {
+  if (chance > 45) {
+    return WEATHER_SNOW;
+  }
+  if (chance < 50) {
+    return WEATHER_THUNDER;
+  }
+  if (chance < 55) {
+    return WEATHER_RAIN;
+  }
+  if (chance < 60) {
+    return WEATHER_FOG;
+  }
+  if (chance < 85) {
+    return WEATHER_CLOUDS;
+  }
+  if (chance < 95) {
+    return WEATHER_FAIR_SKIES;
+  }
+  return WEATHER_CLEAR_SKIES;
+}
+
+export const mareLamentorum = (chance: number): string => {
+  if (chance < 15) {
+    return WEATHER_UMBRAL_WIND;
+  }
+  if (chance < 30) {
+    return WEATHER_MOON_DUST;
+  }
+  return WEATHER_FAIR_SKIES;
+}
+
+export const elpis = (chance: number): string => {
+  if (chance < 25) {
+    return WEATHER_CLOUDS;
+  }
+  if (chance < 40) {
+    return WEATHER_UMBRAL_WIND;
+  }
+  if (chance < 85) {
+    return WEATHER_FAIR_SKIES;
+  }
+  return WEATHER_CLEAR_SKIES;
+}
+
+export const ultimaThule = (chance: number): string => {
+  if (chance < 15) {
+    return WEATHER_ASTROMAGNETIC_STORM;
+  }
+  if (chance < 85) {
+    return WEATHER_FAIR_SKIES;
+  }
+  return WEATHER_UMBRAL_WIND;
+}
+
+export const unnamedIsland = (chance: number): string => {
+  if (chance < 25) {
+    return WEATHER_CLEAR_SKIES;
+  }
+  if (chance < 70) {
+    return WEATHER_FAIR_SKIES;
+  }
+  if (chance < 80) {
+    return WEATHER_CLOUDS;
+  }
+  if (chance < 90) {
+    return WEATHER_RAIN;
+  }
+  if (chance < 95) {
+    return WEATHER_FOG;
+  }
+  return WEATHER_SHOWERS;
+}
