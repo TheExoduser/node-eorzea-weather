@@ -2,6 +2,8 @@
 
 Weather forecast for Eorzea.
 
+Extended by [ex0tiq](https://github.com/ex0tiq/) to include the new endwalker areas
+
 ## Install
 
 ```console

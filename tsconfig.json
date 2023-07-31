@@ -2,11 +2,12 @@
   "compilerOptions": {
     "allowJs": false,
     "baseUrl": ".",
-    "module": "commonjs",
+    "module": "NodeNext",
     "noEmit": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
     "resolveJsonModule": true,
     "strict": true,
-    "suppressImplicitAnyIndexErrors": true,
     "target": "es2019"
   }
 }
